@@ -32,7 +32,21 @@ int ADN::Longitud(){
 // }
 string ADN::Transcripcion() {
     for (int i = 0; i <= secuencia.length(); i++)
-        secuencia[i] = (secuencia[i] == 'T')? 'U': secuencia[i];
+         if (secuencia[i] == 'A') {
+            secuencia[i] = 'U';
+        }
+
+        else if (secuencia[i] == 'T'){
+            secuencia[i] = 'A';
+        }
+
+        else if (secuencia[i] == 'G'){
+            secuencia[i] = 'C';
+        }
+
+        else if (secuencia[i] == 'C'){
+            secuencia[i] = 'G';
+        }
     return secuencia;
 }
 int main() {
