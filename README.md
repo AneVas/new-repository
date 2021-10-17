@@ -1,2 +1,2 @@
-# new-repository
+# ProyectoDNA
 Prueba para clase compu 1
